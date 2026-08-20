@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Gallery</title>
+
+    <!-- Social Preview -->
+    <meta property="og:title" content="🩷❤️🧡">
+    <meta property="og:description" content="Video Gallery">
+    <meta property="og:image" content="thumb1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="thumb1.jpg">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .item {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            border-radius: 10px;
+            background: #222;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+        }
+
+        .play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="gallery">
+
+        <a class="item"
+           href="https://www.effectivecpmnetwork.com/zuguhh3ht6?key=264a9f19f8875fdda67da9449dd2782d"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="thumb1.jpg" alt="Video 1">
+            <span class="play">▶</span>
+        </a>
+
+        <a class="item"
+           href="https://www.effectivecpmnetwork.com/zuguhh3ht6?key=264a9f19f8875fdda67da9449dd2782d"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="thumb2.jpg" alt="Video 2">
+            <span class="play">▶</span>
+        </a>
+
+        <a class="item"
+           href="https://www.effectivecpmnetwork.com/zuguhh3ht6?key=264a9f19f8875fdda67da9449dd2782d"
+           target="_blank"
+           rel="noopener noreferrer">
+            <img src="thumb3.jpg" alt="Video 3">
+            <span class="play">▶</span>
+        </a>
+
+    </main>
+
+</body>
+</html>
